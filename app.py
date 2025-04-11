@@ -39,7 +39,6 @@ with tab2:
                  "Nombre Sector",
                  "Tipo de gasto"],
            values='Valor',
-           color='Nombre Sector',
-           color_discrete_sequence=["#2ca02c"])
+           color="Tipo de gasto", color_discrete_sequence=px.colors.qualitative.Bold)
 
     st.plotly_chart(fig)
