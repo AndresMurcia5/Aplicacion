@@ -12,15 +12,15 @@ tab1, tab2 = st.tabs(['Tab 1', 'Tab 2'])
 
 with tab1:
      # análisis univariado
-     fig, ax= plt.subplots(1, 3, figsize=(10, 4))
+     fig, ax= plt.subplots(1, 3, figsize=(10, 4), color='red')
 
      # educ 
      tab_freq = ran['educ'].value_counts().sort_index()
      ax[0].bar(tab_freq.index, tab_freq.values)
      # edad
-     ax[1].hist(ran['edad'], bins=30)
+     ax[1].hist(ran['edad'], bins=30, color='red')
      # wage
-     ax[2].hist(ran['wage'], bins=40)
+     ax[2].hist(ran['wage'], bins=40, color='red')
 
      st.pyplot(fig)
 
