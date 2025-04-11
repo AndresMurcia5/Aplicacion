@@ -39,6 +39,7 @@ with tab2:
                  "Nombre Sector",
                  "Tipo de gasto"],
            values='Valor',
-           color_continuous_scale='Viridis')
+           color='Nombre Sector',
+           color_discrete_sequence=["#2ca02c"])
 
     st.plotly_chart(fig)
