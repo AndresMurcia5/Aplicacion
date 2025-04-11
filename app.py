@@ -38,7 +38,7 @@ with tab2:
            path=[px.Constant("PGN"),
                  "Nombre Sector",
                  "Tipo de gasto"],
-           values='Valor'
+           values='Valor',
            color='Valor',  
            color_continuous_scale='Viridis')
 
